@@ -1,0 +1,54 @@
+.section1{
+  margin-left: 200px;
+  margin-top:150px;
+  font-family: sans-serif;
+  float: left;
+}
+.first_box{
+  margin-left: 850px;
+  margin-top:150px;
+  width: 500px;
+  background-color: #b300b3;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+body{
+  background-image: url(https://media.istockphoto.com/photos/pink-background-wall-picture-id848765404?k=20&m=848765404&s=612x612&w=0&h=ijscecmpneQ5Zd-ni-OPd51G3W0IO_2l953QM-fji2U=);
+  background-size: cover;
+  /* background-color: #ff4d88; */
+  background-repeat: no-repeat;
+}
+.second_box{
+  background-color: white;
+  float: right;
+  width: 500px;
+  color: black;
+}
+input[type=text], input[type=password]{
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  align-content: center;
+  text-align: center;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+
+}
+/* .head{
+  font-size: 30px;
+} */
+body{
+  color: white;
+}
