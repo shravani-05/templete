@@ -1,38 +1,76 @@
-*{
-    padding:0;
-    margin:0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
 }
-.section1{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+img {
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* Section styles */
+section {
+  padding: 15px 0;
+}
+section h1 {
+  color: #2568a7;
+  padding: 30px 45px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.content-container p {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 35px;
+}
+
+.section1 {
   margin-left: 200px;
-  margin-top:150px;
-  font-family: sans-serif;
+  margin-top: 150px;
   float: left;
 }
-.first_box{
+.first_box {
   margin-left: 850px;
-  margin-top:150px;
+  margin-top: 150px;
   width: 500px;
   background-color: #b300b3;
   padding: 5px;
   text-align: center;
   border-radius: 5px;
 }
-body{
-  background-image: url(https://media.istockphoto.com/photos/pink-background-wall-picture-id848765404?k=20&m=848765404&s=612x612&w=0&h=ijscecmpneQ5Zd-ni-OPd51G3W0IO_2l953QM-fji2U=);
+body {
+  position: relative;
   background-size: cover;
-  /* background-color: #ff4d88; */
   background-repeat: no-repeat;
 }
-.second_box{
+.second_box {
   background-color: white;
   float: right;
   width: 500px;
   color: black;
 }
-input[type=text], input[type=password]{
+input[type="text"],
+input[type="password"] {
   width: 95%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -44,66 +82,148 @@ input[type=text], input[type=password]{
   text-align: center;
 }
 button {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 80%;
+}
 
+/* preloader */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: #55c1ff;
 }
-/* .head{
-  font-size: 30px;
-} */
-body{
-  color: white;
+.loader {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-.home_1{
-  margin-top: 45px;
-  background-color: #008080;
-  padding: 60px;
+.loader-body {
+  position: relative;
+  height: 60px;
+  width: 60px;
+}
+.double-bounce1,
+.double-bounce2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fefefe;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2s infinite ease-in-out;
+  animation: sk-bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+/* Home section */
+.home_1 {
+  color: #fff;
+  height: 100vh;
   text-align: center;
-  font-family:  Roboto Slab;
   font-size: 20px;
+  background: linear-gradient(rgba(72, 127, 177, 0.4), rgba(40, 58, 90, 0.7)),
+    url(https://unsplash.com/photos/zFSo6bnZJTw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjUxNDE0MzI5&force=true&w=1920)
+      center center no-repeat;
+  /* background: url(https://unsplash.com/photos/zFSo6bnZJTw/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjUxNDE0MzI5&force=true&w=1920)
+    center center no-repeat rgba(0, 0, 0, 0.7); */
+  background-size: cover;
+  width: 100%;
 }
-/* nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-} */
-/* nav ul li {
-/* background: #00001a; */
-/* width: 150px;
-border: 1.5px;
-/* height: 50px; */
-/* line-height: 50px; */
-/* text-align: center; */
-/*  */
+.home_1 .home-container {
+  padding: 40px 60px;
+  height: 100%;
+}
+.home_1 .home-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home_1 .home-container h3 {
+  margin-bottom: 20px;
+}
+.home_1 .home-container h1 {
+  margin-top: 30px;
+  width: 80%;
+}
+nav {
+  margin-bottom: 20px;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+nav ul li {
+  line-height: 80px;
+  margin: 0 10px;
+}
+nav ul li a {
+  color: white;
+  font-size: 25px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
 
-/* font-size: 25px;
-position: relative;
-font-family: poppins;
-text-transform: uppercase;
-font-weight: bold;
-} */
-nav ul{
-    float:right;
-    margin-right:20px;
+/* Carousel success section */
+.swiper {
+  width: 100%;
+  height: 100%;
 }
-nav ul li{
-    display:inline-block;
-    line-height: 80px;
-    margin:0 10px;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-nav ul li a{
- color:white;
- font-size:25px;
- padding:7px 13px;
- border-radius:3px;
- text-transform: capitalize;
-}
-.about_us{
+
+.about_us {
   background-color: white;
   color: #00997a;
   width: 54%;
@@ -114,35 +234,16 @@ nav ul li a{
   border-radius: 10px;
   font-family: Dosis;
 }
-.headAboutUs{
-  font-variant-caps: normal;
-  background-color: #00997a;
-  width: 40%;
-  margin-left: 500px;
-  text-align: center;
-  text-decoration: underline;
-  padding: 25px;
-  border-radius: 15px;
+
+.contact-us {
+  background: #f1f7ff;
 }
-.contact{
-  border-style: solid;
-  border-color: white;
-  border-radius: 10px;
+.contact {
   padding: 20px;
-  width: 43%;
-  margin-left: 450px;
+  display: flex;
+  justify-content: center;
 }
-.headContact{
-  font-variant-caps: normal;
-  background-color: #00997a;
-  width: 40%;
-  margin-left: 480px;
-  text-align: center;
-  text-decoration: underline;
-  padding: 25px;
-  border-radius: 15px;
-}
-.number{
+.number {
   margin-left: 650px;
   font-size: 20px;
 }
