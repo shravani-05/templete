@@ -8,7 +8,9 @@ const arrayUpdate = (menuL) => {
 
 window.addEventListener("load", function (e) {
   let contactForm = document.querySelector(".form-container");
-  contactForm.style.display = "none";
+  if (contactForm) {
+    contactForm.style.display = "none";
+  }
 
   let menu = document.querySelector(".menub");
   let close = document.querySelector(".close");
@@ -47,10 +49,10 @@ window.addEventListener("load", function (e) {
 
   let container = document.querySelector(".container");
 
-  if(window.location.pathname === "/"){
+  if (window.location.pathname === "/") {
     container.addEventListener("click", () => {
       contactForm.style.display = "none";
       body.style.overflow = "auto";
-    })
+    });
   }
 });
