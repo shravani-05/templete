@@ -187,30 +187,73 @@ button {
   margin-top: 30px;
   width: 80%;
 }
-nav {
+.menu {
   margin-bottom: 20px;
   padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav ul {
+.menu ul {
   display: flex;
   justify-content: right;
   margin-right: 20px;
 }
-nav ul li {
+.menu ul li {
   line-height: 80px;
   margin: 0 10px;
 }
-nav ul li a {
+.menu ul li a {
   color: white;
   font-size: 25px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: capitalize;
 }
+#menuBtn {
+  z-index: 999;
+}
+nav img {
+  width: 25px;
+  height: 25px;
+}
+.menu.inactive .close {
+  display: none;
+}
+.menu.active .close {
+  display: block;
+}
+.menu.active .menub {
+  display: none;
+}
 
+@media (min-width: 768px) {
+  #menuBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu{
+    padding-top: 30px;
+  }
+  .menu ul {
+    position: fixed;
+    display: none;
+    padding-top: 200px;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #55c1ff;
+    height: 100%;
+    z-index: 990;
+  }
+  .menu.active ul{
+    display: flex;
+    align-items: center;
+  }
+}
 /* Carousel success section */
 .swiper {
   width: 100%;

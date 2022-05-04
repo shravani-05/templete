@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 
 <html>
-  <div class="main">
-    <head>
-      <meta charset="utf-8" />
-      <title>HOME page</title>
-      <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="utf-8" />
+    <title>HOME page</title>
+    <link rel="stylesheet" href="style.css" />
 
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-      />
-      <!-- Link Swiper's CSS -->
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper/swiper-bundle.min.css"
-      />
-    </head>
-    <body>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="main">
       <div class="preloader">
         <div class="loader">
           <div class="loader-body">
@@ -29,19 +29,24 @@
         </div>
       </div>
       <div class="home_1">
-        <nav>
-          <h1>Your Logo</h1>
+        <nav class="menu inactive">
+          <h1>Vibrant Academy</h1>
           <ul>
             <li>
               <a href="home.html">Home</a>
             </li>
             <li>
-              <a href="courses.html">Courses</a>
+              <a href="/testimonial">Testimonials</a>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="/results">Results</a>
             </li>
           </ul>
+
+          <div id="menuBtn">
+            <img src="/assets/icons/menu.png" class="menub" alt="menu" />
+            <img src="/assets/icons/close.png" class="close" alt="close" />
+          </div>
         </nav>
         <div class="home-container">
           <div>
@@ -132,9 +137,8 @@
           ></iframe>
         </div>
       </section>
-
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script src="scripts.js"></script>
-    </body>
-  </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
