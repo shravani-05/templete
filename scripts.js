@@ -7,6 +7,9 @@ const arrayUpdate = (menuL) => {
 };
 
 window.addEventListener("load", function (e) {
+  let contactForm = document.querySelector(".form-container");
+  contactForm.style.display = "none";
+
   let menu = document.querySelector(".menub");
   let close = document.querySelector(".close");
   let menuL = document.querySelector(".menu");
@@ -23,17 +26,31 @@ window.addEventListener("load", function (e) {
   let menuBtn = document.querySelector("#menuBtn");
   menuBtn.addEventListener("click", () => {
     let menuListClass = arrayUpdate(menuL);
-    let body = document.querySelector("body")
-    if(menuListClass.includes("inactive")){
-      menuL.classList.remove("inactive")
-      menuL.classList.add("active")
-      body.style.overflow = "hidden"
-    }
-    else{
-      menuL.classList.remove("active")
-      menuL.classList.add("inactive")
-      body.style.overflow = "auto"
+    let body = document.querySelector("body");
+    if (menuListClass.includes("inactive")) {
+      menuL.classList.remove("inactive");
+      menuL.classList.add("active");
+      body.style.overflow = "hidden";
+    } else {
+      menuL.classList.remove("active");
+      menuL.classList.add("inactive");
+      body.style.overflow = "auto";
     }
     menuListClass = arrayUpdate(menuL);
-  })
+  });
+
+  let body = document.querySelector("body");
+  setTimeout(() => {
+    contactForm.style.display = "flex";
+    body.style.overflow = "hidden";
+  }, 5000);
+
+  let container = document.querySelector(".container");
+
+  if(window.location.pathname === "/"){
+    container.addEventListener("click", () => {
+      contactForm.style.display = "none";
+      body.style.overflow = "auto";
+    })
+  }
 });
