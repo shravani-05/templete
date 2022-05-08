@@ -63,33 +63,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.second_box {
-  background-color: white;
-  float: right;
-  width: 500px;
-  color: black;
-}
-input[type="text"],
-input[type="password"] {
-  width: 95%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
-  align-content: center;
-  text-align: center;
-}
-button {
-  background-color: #04aa6d;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 80%;
-}
 
 /* preloader */
 .preloader {
@@ -304,23 +277,23 @@ nav img {
   color: #5a5d80;
   margin-bottom: 10px;
 }
-.card-container{
+.card-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (max-width:668px) {
-  .card-container{
+@media (max-width: 668px) {
+  .card-container {
     flex-direction: column;
   }
   .card {
     margin: 20px;
   }
 }
-.courses{
+.courses {
   padding-bottom: 100px;
 }
-.contact-us p{
+.contact-us p {
   text-align: center;
   color: rgb(0 0 0 / 50%);
 }
@@ -344,17 +317,24 @@ body {
   position: relative;
 }
 
-.form-container{
+.form-container {
   display: none;
 }
-
+.form-backdrop {
+  display: none;
+  background: transparent;
+  height: 100vh;
+  position: fixed;
+  z-index: 1111;
+  width: 100%;
+}
 .container {
   width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   background: rgba(0, 0, 0, 0.65);
   color: #777;
   font-weight: 100;
@@ -379,8 +359,7 @@ body {
   padding: 25px;
   margin: 50px 0;
   border-radius: 10px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2),
-    0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   z-index: 1200;
 }
 

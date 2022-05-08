@@ -42,15 +42,17 @@ window.addEventListener("load", function (e) {
   });
 
   let body = document.querySelector("body");
+  let backdrop = this.document.querySelector(".form-backdrop")
   setTimeout(() => {
     contactForm.style.display = "flex";
     body.style.overflow = "hidden";
+    backdrop.style.display = "block"
   }, 5000);
 
-  let container = document.querySelector(".container");
+  // let container = document.querySelector(".form-container");
 
   if (window.location.pathname === "/") {
-    container.addEventListener("click", () => {
+    backdrop.addEventListener("click", () => {
       contactForm.style.display = "none";
       body.style.overflow = "auto";
     });
