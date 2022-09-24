@@ -3,57 +3,232 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>EXAMPLE</title>
+    <title>Vibrant Academy</title>
     <link rel="stylesheet" href="style.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <div class="flex-container">
-      <div class="first_box">
-        <p>Lead Capture Form</p>
-
-        <div class="second_box">
-          <p>
-            <input
-              id="username"
-              class="lf--input"
-              placeholder="Enter First name"
-              type="text"
-              required
-            />
-          </p>
-          <p>
-            <input
-              id="username"
-              class="lf--input"
-              placeholder="Email"
-              type="email"
-              required
-            />
-          </p>
-          <p>
-            <input
-              id="username"
-              class="lf--input"
-              placeholder="Subject"
-              type="subject"
-              required
-            />
-          </p>
-          <p>
-            <textarea
-              id="username"
-              class="lf--input"
-              placeholder="Message"
-              type="text"
-              required
-              rows="4"
-            ></textarea>
-          </p>
-          <button class="submit-btn" type="submit">
-            Start your free trial today
-          </button>
+    <div class="main">
+      <div class="preloader">
+        <div class="loader">
+          <div class="loader-body">
+            <li>
+              <div class="double-bounce1"></div>
+              <div class="double-bounce2"></div>
+            </li>
+          </div>
         </div>
       </div>
+
+      <!--  -->
+
+      <div class="form-container">
+        <div class="container">
+          <div class="form-backdrop"></div>
+          <form id="contact" action="" method="post">
+            <h3>Contact US</h3>
+            <fieldset>
+              <input
+                placeholder="Your name"
+                type="text"
+                tabindex="1"
+                required
+                autofocus
+              />
+            </fieldset>
+            <fieldset>
+              <input
+                placeholder="Your Email Address"
+                type="email"
+                tabindex="2"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <input
+                placeholder="Your Phone Number (optional)"
+                type="tel"
+                tabindex="3"
+                required
+              />
+            </fieldset>
+            <fieldset>
+              <textarea
+                placeholder="Type your message here...."
+                tabindex="5"
+                required
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <button
+                name="submit"
+                type="submit"
+                id="contact-submit"
+              >
+                Submit
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <div class="home_1">
+        <nav class="menu inactive">
+          <h1>Vibrant Academy</h1>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/testimonial">Testimonials</a>
+            </li>
+            <li>
+              <a href="/results">Results</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+          </ul>
+
+          <div id="menuBtn">
+            <img src="/assets/icons/menu.png" class="menub" alt="menu" />
+            <img src="/assets/icons/close.png" class="close" alt="close" />
+          </div>
+        </nav>
+        <div class="home-container">
+          <div>
+            <h3>Share Skills Training & Learning Solutions</h3>
+            <p>in association with</p>
+            <h1>VIBRANT ACADEMY FOR DLP STUDY CENTER KHARGAR</h1>
+          </div>
+        </div>
+      </div>
+
+      <section class="success-stories">
+        <div class="swiper myswiper">
+          <h1>Success Stories</h1>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/img/1.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/2.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/3.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/4.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/5.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/img/6.jpg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <h1>About Vibrant Academy</h1>
+        <div class="content-container">
+          <p>
+            Share Skills is founded by Mr.Vaibhav Patil who has tremendous
+            experience in Education & EdTech sector. This venture is also guided
+            by and mentored by Dr.Vilas Nitnavare who is Principal in an
+            Engineering College, Mumbai. Share Skills is a well-known brand in
+            Education & Skill Development & Vibrant Academy is top 10 brand in
+            India, well known in Kota for its educational courses to qualify for
+            both IIT JEE mains and Advance
+          </p>
+          <p>
+            Vibrant academy provides a platform to students to excel in the
+            field of engineering. In today’s competitive scenario, it is quite
+            evident to improve the level of awareness and imply the knowledge to
+            the best concern. We believe that IIT-JEE aspirants should be
+            devoted and dedicated towards the attainment of their goals, with a
+            view to perform better and better. IIT-JEE is India’s most
+            prestigious exam for engineering and for that one has to prepare
+            oneself under the guidance and coaching by the finest minds. Vibrant
+            academy firmly believes to deliver superior services in the field of
+            IIT-JEE preparation. Our program is highly structured and designed
+            appropriately to cope up with the present challenges. Intensive and
+            rich content enables the students to understand and prepare
+            themselves for the most prestigious exam in the country. We deliver
+            comprehensive solutions to the masses in order to succeed in their
+            respective field of engineering. Vibrant academy welcomes to all the
+            students / prospective students to associate with us to transform
+            your personality and build the character required to achieve
+            specific objectives.
+          </p>
+        </div>
+      </section>
+
+      <section class="courses bg">
+        <h1>Our Courses</h1>
+        <div class="card-container">
+          <div class="card">
+            <h3>Entrance Exams</h3>
+            <p>
+              IIT JEE, MAINS <br />
+              ADVANCE BITS, <br />
+              MHT CET NEET, <br />
+              MEDICAL ENTRANCE <br />
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Entrance Exams</h3>
+            <p>
+              NATA SCHOOL TUITIONS <br />
+              7TH TO 1oth all boards <br />
+              NTSE <br />
+              OLYMPIAD <br />
+              CAREER APTITUDE <br />
+              DMIT TEST <br />
+              VSAT /SEAT <br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <h1>Contact US</h1>
+        <div class="contact">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849262.8241160489!2d74.73740133125!3d25.141050500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f851f85083f45%3A0x62b0c0875d38dfaa!2sVibrant%20Academy%20(India)%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1651393314337!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <p>
+          Address: Office 120, Grow more towers, Sector 2, Near Kharghar Railway
+          Station
+        </p>
+      </section>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
